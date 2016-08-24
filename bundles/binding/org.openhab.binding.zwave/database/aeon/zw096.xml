@@ -120,6 +120,26 @@
         </Parameter>
 
         <Parameter>
+            <Index>83</Index>
+            <Label lang="en">Color in night light mode</Label>
+            <Type>short</Type>
+            <Default>0</Default>
+            <Minimum>0</Minimum>
+            <Maximum>255</Maximum>
+            <Size>3</Size>
+        </Parameter>
+
+        <Parameter>
+            <Index>84</Index>
+            <Label lang="en">Color in energy mode </Label>
+            <Type>short</Type>
+            <Default>0</Default>
+            <Minimum>0</Minimum>
+            <Maximum>255</Maximum>
+            <Size>3</Size>
+        </Parameter>
+
+        <Parameter>
             <Index>90</Index>
             <Label lang="en">Enable items 91 and 92</Label>
             <Type>list</Type>

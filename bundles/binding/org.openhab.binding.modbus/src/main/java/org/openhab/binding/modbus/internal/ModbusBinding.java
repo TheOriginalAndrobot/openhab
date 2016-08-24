@@ -156,8 +156,8 @@ public class ModbusBinding extends AbstractActiveBinding<ModbusBindingProvider> 
 		}
 		else if (type.equals(ModbusBindingProvider.VALUE_TYPE_INT32)) {
 			ByteBuffer buff = ByteBuffer.allocate(4);
-			buff.put(registers[index * 2 + 1].toBytes());
 			buff.put(registers[index * 2 + 0].toBytes());
+			buff.put(registers[index * 2 + 1].toBytes());
 			return new DecimalType(buff.order(ByteOrder.BIG_ENDIAN).getInt(0));
 		}
 		else if (type.equals(ModbusBindingProvider.VALUE_TYPE_UINT32)) {
